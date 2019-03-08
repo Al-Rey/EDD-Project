@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Assistance Device</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+	body {
+    	background-color: lightblue;
+        color: black;
+    }
+	h1{
+        text-align: center;
+        text-decoration: underline;
+        border-style: outset;
+    
+    }
+    
+    #title{
+    	color: black;
+    }
+
+    table{
+        text-align: center;
+        border: solid 10px;
+    }
+    th{
+        border: solid 1px;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+    td{
+        border: solid 1px;
+    }
+
+    #cancel{
+        width: fit-content;
+    }
+</style>
+<script>
+function myFunction1() {
+  var studentone = document.getElementById("myText1").value;
+  document.getElementById("01").innerHTML = studentone;
+  }
+function myFunction2() {
+  var studenttwo = document.getElementById("myText2").value;
+  document.getElementById("02").innerHTML = studenttwo;
+  }
+function myFunction3() {
+  var studentthree = document.getElementById("myText3").value;
+  document.getElementById("03").innerHTML = studentthree;
+  }
+function myFunction4() {
+  var studentfour = document.getElementById("myText4").value;
+  document.getElementById("04").innerHTML = studentfour;
+  }
+function myFunction5() {
+  var studentfive = document.getElementById("myText5").value;
+  document.getElementById("05").innerHTML = studentfive;
+  }
+function myFunction6() {
+  var studentsix = document.getElementById("myText6").value;
+  document.getElementById("06").innerHTML = studentsix;
+  }
+</script>
+<body>
+
+<h1>Welcome Back!</h1>
+<p style="text-align:center;">Below is a chart that includes your student's names and their requests.</p>
+<!-- <i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i>
+<i style="font-size:300%;" class="material-icons">computer</i> -->
+
+<table style="width:100%">
+  <tr id="title">
+    <th>Student</th>
+    <th>Help Requested</th> 
+    <th>Order of Requests</th>
+    <th>Times requested</th>		
+    <th>Request Canceled</th>
+    <th>Cancel Request</th>
+  </tr>
+  <tr>
+    <td id="01">01</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td class = "count">89</td>
+    <td><button id="cancel">Cancel</button></td>
+  </tr>
+  <tr>
+    <td id="02">02</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td class = "count">77</td>
+    <td><button id="cancel">Cancel</button></td>
+  </tr>
+    <tr>
+    <td id="03">03</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td class = "count">78</td>
+    <td><button id="cancel">Cancel</button></td>
+  </tr>
+    <tr>
+    <td id="04">04</td>
+    <td></td>
+    <td></td> 
+    <td></td>
+    <td class = "count">23</td>
+    <td><button id="cancel">Cancel</button></td>
+    
+  </tr>
+    <tr>
+    <td id="05">05</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td class = "count">43</td>
+    <td><button id="cancel">Cancel</button></td>
+  </tr>
+    <tr>
+    <td id="06">06</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td class = "count">69</td>
+    <td><button id="cancel">Cancel</button></td>
+  </tr>
+</table>
+
+<input type="text" id="myText1" value="01">
+<button onclick="myFunction1()">Try it</button>
+<input type="text" id="myText2" value="02">
+<button onclick="myFunction2()">Try it</button>
+<input type="text" id="myText3" value="03">
+<button onclick="myFunction3()">Try it</button>
+<input type="text" id="myText4" value="04">
+<button onclick="myFunction4()">Try it</button>
+<input type="text" id="myText5" value="05">
+<button onclick="myFunction5()">Try it</button>
+<input type="text" id="myText6" value="06">
+<button onclick="myFunction6()">Try it</button>
+
+
+
+
+</body>
+</html>
